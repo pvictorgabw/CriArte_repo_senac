@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+header.topo {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(180deg, #F1B545 37%, #BE8F36 51%, #8b6828 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 50px solid #000;
+    padding-bottom: 10px;
+    height: 150px;
+}
+.top-bar {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo {
+    position: relative;
+    top: -35px;
+    transform: translateX(-300px);
+    width: 180px;
+    height: auto;
+}
+.search {
+    position: relative;
+    top: -45px;
+    flex: 1;
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 5px 15px;
+    transform: translateX(-70px);
+}
+.search input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    color: #000;
+}
+.search span {
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+}
+.icons {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+}
+.icons i {
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+.login{
+    top: 0px;
+    font-size: 55px;
+    position: relative;
+    transform: translate(40px);
+}
+.carinho{
+    transform: translateX(80px);
+    top: -80px;
+    font-size: 55px;
+    position: relative;
+}
+.conta {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+.cartegoria {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+    top: -80px;
+    flex-wrap: wrap;
+}
+
+.cartegoria li {
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    
+}
+
+/* ---------- Conteúdo principal ---------- */
+.conteudo {
+    padding: 40px 0;
+    background-color: #007980;
+    text-align: center;
+}
+
+/* ---------- Seção do produto ---------- */
+.produto-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.imagem-produto {
+    background-color: #f18774;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px #004c50;
+}
+
+.imagem-produto img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* ---------- QR Code e Pagamento ---------- */
+.pagamento {
+    background-color: #00a0a8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px #004c50;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+}
+
+.qrcode {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.valor {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.pagamento ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.pagamento ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.btn-copiar {
+    background-color: white;
+    color: #004c50;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-copiar:hover {
+    background-color: #e5a543;
+    color: white;
+}
+
+/* ---------- Descrição ---------- */
+.descricao {
+    color: white;
+    margin-top: 10px;
+}
+
+.descricao h3 {
+    margin: 0;
+}
+
+.descricao span {
+    font-weight: normal;
+}
+
+.avaliacao {
+    color: #ffd700;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* ---------- Recomendações ---------- */
+.recomendacoes {
+    margin-top: 40px;
+}
+
+.recomendacoes h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.produtos-recomendados {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produtos-recomendados img {
+    width: 100px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.produtos-recomendados img:hover {
+    transform: scale(1.1);
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+}
